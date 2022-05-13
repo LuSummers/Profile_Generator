@@ -1,0 +1,42 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    padding: 30px;
+   
+    text-align: center;
+    color:black;
+    background-color: rgb(189, 94, 94);
+    align-items: center;
+}
+.card {
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+    width:20em;
+    border: solid black 2px;
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 10px;
+
+}.card-header{
+    color:blue;
+}
+ul {
+    background-color: aliceblue;
+}
+li{
+    border: 1px solid black;
+}
+card-title {
+    background-color: rgb(93, 93, 183);
+    text-align: center;
+    size: 5em;
+    border: black 2px solid;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
