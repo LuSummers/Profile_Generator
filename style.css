@@ -6,10 +6,10 @@ main{
 
 h1 {
     padding: 30px;
-   
+    font-size: 4em;
     text-align: center;
-    color:black;
-    background-color: rgb(189, 94, 94);
+    color:rgb(245, 234, 220);
+    background-color: rgb(100, 122, 169);
     align-items: center;
 }
 .card {
@@ -18,25 +18,34 @@ h1 {
     height: 15em;
     width:20em;
     border: solid black 2px;
-    background-color: antiquewhite;
+    background-color: rgb(246, 241, 235);
     margin: 20px;
     padding: 10px;
+    box-shadow:8px 8px 8px rgb(147, 147, 202);
+} 
 
-}.card-header{
-    color:blue;
+.card-header{
+    text-align: center;
+    font-size: 3em;
 }
 ul {
-    background-color: aliceblue;
+    font-size: 1em;
+    border: 1px black solid;
+    background-color: rgb(238, 231, 222);
+    padding-top:2px;
 }
 li{
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 5px;
+}
+
+.top{
+    background-color: rgb(114, 114, 162);
+    border: black 2px solid;
 }
 card-title {
-    background-color: rgb(93, 93, 183);
-    text-align: center;
-    size: 5em;
-    border: black 2px solid;
-    align-items: center;
+    font-size: 1.5em;
     padding: 5px;
     margin: 10px;
+    text-align: center;
 }

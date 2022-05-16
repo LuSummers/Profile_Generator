@@ -8,16 +8,16 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const team = [];
-const OUTPUT_DIR = path.resolve(__dirname, "output")
+const OUTPUT_DIR = path.resolve(__dirname, "dist")
 const outputPath = path.join(OUTPUT_DIR, "team.html")
 
-const runApp = () => {
+const startApp = () => {
   const mainMenu = () => {
     inquirer.prompt(
       {
         type: 'list',
         name: 'type',
-        message: 'what type of employee',
+        message: 'Please select employee title',
         choices: ['Engineer', 'Intern', 'Manager', 'Build Team']
       }
     ).then(answers => {
@@ -60,7 +60,7 @@ const runApp = () => {
       {
         type: 'input',
         name: 'id',
-        message: 'Enter your id # (Required)',
+        message: 'Please enter your id # (Required)',
         validate: idInput => {
           if (idInput) {
             return true;
@@ -73,7 +73,7 @@ const runApp = () => {
       {
         type: 'input',
         name: 'email',
-        message: 'What is your email? (Required)',
+        message: 'What is your email address? (Required)',
         validate: emailInput => {
           if (emailInput) {
             return true;
@@ -124,7 +124,7 @@ const runApp = () => {
       {
         type: 'input',
         name: 'id',
-        message: 'Enter your id # (Required)',
+        message: 'Please enter your id # (Required)',
         validate: idInput => {
           if (idInput) {
             return true;
@@ -137,7 +137,7 @@ const runApp = () => {
       {
         type: 'input',
         name: 'email',
-        message: 'What is your email? (Required)',
+        message: 'What is your email address? (Required)',
         validate: emailInput => {
           if (emailInput) {
             return true;
@@ -186,7 +186,7 @@ const runApp = () => {
       {
         type: 'input',
         name: 'id',
-        message: 'Enter your id # (Required)',
+        message: 'Please enter your id # (Required)',
         validate: idInput => {
           if (idInput) {
             return true;
@@ -199,7 +199,7 @@ const runApp = () => {
       {
         type: 'input',
         name: 'email',
-        message: 'What is your email? (Required)',
+        message: 'What is your email address? (Required)',
         validate: emailInput => {
           if (emailInput) {
             return true;
@@ -244,5 +244,5 @@ mainMenu();
 }
   
 
-runApp();
+startApp();
 

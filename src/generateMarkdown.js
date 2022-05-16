@@ -8,12 +8,13 @@ const generateTeam = team => {
             console.log(manager);
             return `
             <div class="card">
+            <div class="top">
             <div class="card-header">${manager.name}</div>
-                <card-title class="manager"><i class='fa fa-coffee'></i>Manager</card-title>
+                <card-title class="manager"><i class='fa fa-coffee'></i>  Manager </card-title> </div>
                 <ul class ="list-group">
-                    <li class="list-group-item">ID: ${manager.id}</li>
+                    <li class="list-group-item ">ID: ${manager.id}</li>
                     <li class="list-group-item">Email: <span id = "email"><a href="mailto:${manager.email}">${manager.email}</a></span></li>
-                    <li class="list-group-item">Office Number ${manager.officeNumber}</li>
+                    <li class="list-group-item">Office Number: ${manager.officeNumber}</li>
                 </ul>
             </div></card>`;
            
@@ -23,12 +24,13 @@ const generateTeam = team => {
             console.log(engineer);
             return `
             <div class="card">
+            <div class="top">
             <div class="card-header">${engineer.name}</div>
-            <card-title class="engineer"><i class='fas fa-glasses'></i> Engineer</card-title>
+            <card-title class="engineer"><i class='fas fa-glasses'></i> Engineer</card-title></div>
             <ul class ="list-group">
                 <li class="list-group-item">ID: ${engineer.id}</li>
                 <li class="list-group-item">Email: <span id = "email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></li>
-                <li class="list-group-item">Github:${engineer.github}</li>
+                <li class="list-group-item">Github:<span id = "github"><a href="http://github.com/${engineer.github}">${engineer.github}</a></span></li>
             </ul>
         </div></card>`;
             
@@ -38,8 +40,9 @@ const generateTeam = team => {
             console.log(intern);
             return `
             <div class="card">
+            <div class="top">
             <div class="card-header">${intern.name}</div>
-            <card-title class="intern"><i class='fa fa-graduation-cap'></i>Intern</card-title> 
+            <card-title class="intern"><i class='fa fa-graduation-cap'></i>Intern</card-title></div>
             <ul class ="list-group">
                 <li class="list-group-item">ID: ${intern.id}</li>
                 <li class="list-group-item">Email: <span id = "email"><a href="mailto:${intern.email}">${intern.email}</a></span></li>
@@ -69,17 +72,6 @@ const generateTeam = team => {
     
     }
 
-
-
-// for (let i =0; i<team.length; i++){
-//     if (const generateManager:(manager:any) => 
-//     generateManager(team[i]);}
-//     if team[i].getRole()==="Engineer"){
-//         generateEngineer(team[i]);
-//     }
-//     if team[i].getRole()==="Intern"){
-//         generateIntern(team[i]);
-// }
 
 module.exports = team => {
     return `
